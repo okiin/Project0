@@ -10,7 +10,7 @@ interface ProdutoProps {
     qtde: number
 }
 
-export function ProdutoP() {
+export function ProdutoP(){
     const location = useLocation()
 
     const username = location.state?.username || ''
@@ -37,7 +37,7 @@ export function ProdutoP() {
     }, [username])
 
     return (
-        <div className=" bg-slate-700 flex flex-col items-center justify-center h-screen w-screen">
+        <div className=" bg-slate-800 flex flex-col items-center justify-center h-screen w-screen">
             <div className=" max-w-md mx-auto">
                 <div className=" h-14 bg-gradient-to-r from-rose-500 to-rose-800 text-bold rounded-xl mb-5">
                     <h2 className="flex items-center justify-center text-4xl font-bold ">Lista de Produtos</h2>
