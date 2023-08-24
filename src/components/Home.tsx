@@ -48,19 +48,20 @@ export function Home() {
         <div className="w-screen h-screen bg-slate-800 ">
            <div className="border-rose-800 bg-gradient-to-r from-rose-500 to-rose-800  p-5  ">
                  <h1 className="font-bold mb-6 text-center ">Bem vindo {username}</h1>
-            </div>
+         </div>
       
-            <div className="bg-slate-800 flex items-center justify-center mt-10">
+              <div className="bg-slate-800 flex items-center justify-center mt-10">
                 <div className="bg-gray-900 rounded-lg drop-shadow-2x1  flex-col items-center "> </div>
-                <ul>
-                    <button onClick={produtos} className="h-20 w-40 items-center justify-center text-center">
-                    Produtos <FaShopify size={20}/>
+                <div className="flex-col items-center text-center justify-center">
+                    <button 
+                         onClick={exit} className="mr-10 h-20 w-40 items-center justify-center text-center">  Sair <BiLogIn size={20}/>
                     </button>
-                </ul>
+                    <button  
+                         onClick={produtos} className="ml-80 h-20 w-40 items-center justify-center text-center"> Produtos <FaShopify size={20}/>
+                    </button>
+                </div>
             </div>
-            <button  
-               onClick={exit} className="h-20 w-40 items-center justify-center text-center"> Sair <BiLogIn size={20}/>
-            </button>
+           
         </div>
        
     )

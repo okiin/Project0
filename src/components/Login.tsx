@@ -34,7 +34,7 @@ export default function Login() {
     }
 
     return (
-        <div className="bg-slate-700 flex items-center justify-center h-screen w-screen">
+        <div className="bg-slate-800 flex items-center justify-center h-screen w-screen">
             <div className="bg-gray-900 p-8 rounded-lg drop-shadow-2x1 w-96 flex-col items-center ">
                 <h1 className="font-bold mb-8 text-center "> Login </h1>
                 <form className='mb-4'  onSubmit={handSubmit}>
