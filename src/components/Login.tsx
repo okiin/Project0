@@ -27,7 +27,7 @@ export default function Login() {
                 alert('Login incorreto.')
             }
             else{
-                navigate('/produto', {state: {username}})
+                navigate('/home', {state: {username}})
             }
         }
     
