@@ -29,7 +29,7 @@ export function Home() {
     //produto navigate
     const produtos= async(e: FormEvent) =>{
         e.preventDefault()
-        const resp = await fetch(`http://localhost:3000/users?username=${username}`,{
+        await fetch(`http://localhost:3000/users?username=${username}`,{
             method: 'GET'
         })
         .then (resposta =>{
@@ -48,19 +48,18 @@ export function Home() {
         <div className="w-screen h-screen bg-slate-800 ">
            <div className="border-rose-800 bg-gradient-to-r from-rose-500 to-rose-800  p-5  ">
                  <h1 className="font-bold mb-6 text-center ">Bem vindo {username}</h1>
-            </div>
+         </div>
       
-            <div className="bg-slate-800 flex items-center justify-center mt-10">
+              <div className="bg-slate-800 flex items-center justify-center mt-10">
                 <div className="bg-gray-900 rounded-lg drop-shadow-2x1  flex-col items-center "> </div>
-                <ul className="flex-col items-center text-center">
+                <div className="flex-col items-center text-center justify-center">
                     <button 
                          onClick={exit} className="mr-10 h-20 w-40 items-center justify-center text-center">  Sair <BiLogIn size={20}/>
                     </button>
                     <button  
                          onClick={produtos} className="ml-80 h-20 w-40 items-center justify-center text-center"> Produtos <FaShopify size={20}/>
                     </button>
-    
-                </ul>
+                </div>
             </div>
            
         </div>
